@@ -1,0 +1,70 @@
+# Virtual Environment
+
+venv/
+.env
+
+# Python Cache
+
+**pycache**/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+
+.ipynb_checkpoints/
+
+# Logs
+
+*.log
+
+# VS Code
+
+.vscode/
+
+# OS Files
+
+.DS_Store
+Thumbs.db
+
+# Generated Data Files
+
+data/processed/
+data/outputs/
+
+# Large Raw Dataset
+
+data/raw/candidates.jsonl
+
+# Temporary Files
+
+*.tmp
+*.temp
+
+# HuggingFace Cache
+
+.cache/
+
+# Model Files
+
+models/
+
+# Build Files
+
+build/
+dist/
+*.egg-info/
+
+# Terraform
+
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Docker
+
+docker-compose.override.yml
+
+# Streamlit Cache
+
+.streamlit/secrets.toml
