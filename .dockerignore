@@ -1,0 +1,15 @@
+venv/
+.git/
+__pycache__/
+
+data/raw/
+data/processed/
+
+notebooks/
+
+.cache/
+
+*.jsonl
+*.ipynb
+
+.gitignore
