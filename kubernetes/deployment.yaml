@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: talentiq-app
+  namespace: talentiq
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: talentiq
+
+  template:
+
+    metadata:
+      labels:
+        app: talentiq
+
+    spec:
+      containers:
+
+      - name: talentiq
+
+        image: talentiq:latest
+
+        imagePullPolicy: Never
+
+        ports:
+        - containerPort: 8501
+
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "250m"
+
+          limits:
+            memory: "1Gi"
+            cpu: "500m"

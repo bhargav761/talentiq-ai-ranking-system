@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+
+metadata:
+  name: talentiq-config
+  namespace: talentiq
+
+data:
+
+  APP_NAME: TalentIQ
+
+  MODEL_NAME: all-MiniLM-L6-v2
+
+  ENVIRONMENT: Development

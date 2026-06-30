@@ -1,0 +1,30 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+
+metadata:
+  name: talentiq-ingress
+  namespace: talentiq
+
+spec:
+
+  rules:
+
+  - host: talentiq.local
+
+    http:
+
+      paths:
+
+      - path: /
+
+        pathType: Prefix
+
+        backend:
+
+          service:
+
+            name: talentiq-service
+
+            port:
+
+              number: 8501
